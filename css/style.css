@@ -1,0 +1,104 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-big{
+  width: 1000px;
+  height: 500px;
+  border: 1px solid black;
+  background-color: rgb(61, 225, 61);
+}
+
+.container{
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 30px;
+  background-color: red;
+}
+
+.box-viola{
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.box{
+  width: 50px;
+  height: 50px;
+}
+
+.box.green{
+  background-color: green;
+}
+.box.blue{
+  background-color: blue;
+}
+
+
+
+.container.primo .box-2{
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+}
+
+.container.secondo .box{
+  width: 100px;
+  height: 100px;
+}
+
+.container.secondo .box-2{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.container.secondo .box-3{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.container.secondo .box-4{
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+
+.container-big .container{
+  display: inline-block;
+}
+
+.container-big .container:first-child .box:last-child{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.container-big .container:last-child .box:last-child{
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+.big-box{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 30px auto;
+  height: 400px;
+  background-color: aqua;
+}
+.big-box h3{
+  color: red;
+}
+.big-box:hover h3{
+  color: yellowgreen;
+  font-size: 50px;
+}
